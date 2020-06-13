@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FYP la kot</string>
+    <string name="descImage">Image</string>
+    <string name="myhomemaker_buddy">MyHomemaker Buddy</string>
+    <string name="get_started">Get Started</string>
+    <string name="a_home_organizer_application">A home organizer application</string>
+    <string name="hello_user">Hello User!</string>
+</resources>
