@@ -27,27 +27,165 @@
             android:background="#808080"
             android:layout_gravity="center_horizontal"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_height="470dp"
+            android:layout_marginTop="40dp"
             android:orientation="vertical"
             android:padding="10dp">
 
+            <ImageView
+                android:id="@+id/chores"
+                android:layout_width="124dp"
+                android:layout_height="104dp"
+                android:background="@drawable/calendar_bg"
+                android:elevation="5dp"
+                android:src="@drawable/cleaning"
+                android:contentDescription="@string/descImage" />
+
+            <ImageView
+                android:id="@+id/bank"
+                android:layout_width="124dp"
+                android:layout_height="104dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/calendar_bg"
+                android:elevation="5dp"
+                android:src="@drawable/bank"
+                android:contentDescription="@string/descImage" />
+
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="104dp"
+                android:layout_toEndOf="@+id/bank"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/calendar_bg"
+                android:elevation="5dp"
+                android:src="@drawable/cooking"
+                android:contentDescription="@string/descImage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/muli_semibold_italic"
+                    android:text="@string/Chores"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="80dp"
+                    android:fontFamily="@font/muli_semibold_italic"
+                    android:text="@string/finance"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="80sp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/muli_semibold_italic"
+                    android:text="@string/cooking"
+                    android:textSize="15sp" />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/myhomemaker_buddy"
-                android:textSize="30sp"/>
+                android:layout_marginTop="135dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/upcoming_tasks"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_tasks"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_tasks"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_tasks"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/circle_tasks"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginTop="15dp"
-                android:text="@string/a_home_organizer_application"
-                android:textSize="25sp"/>
-        </LinearLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/upcoming_bills"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/square_bill"
+                    android:layout_marginTop="315dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/square_bill"
+                    android:layout_marginTop="315dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/square_bill"
+                    android:layout_marginTop="315dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/square_bill"
+                    android:layout_marginTop="315dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/descImage" />
+            </LinearLayout>
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
